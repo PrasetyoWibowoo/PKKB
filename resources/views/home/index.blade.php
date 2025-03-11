@@ -24,6 +24,7 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow shadow-sm fixed-top fy-3">
     <div class="container">
+    <img src="{{URL::asset('public\assets\img\mieyuuelogo.png')}}" alt="">
       <a class="navbar-brand fw-bold" href="#"><span class="primary">MIE</span>YUUE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,11 +125,7 @@
             <li class="list-group-item">
               <i class="fa fa-check-double primary"></i>
               {{$about->kelebihan_3}}
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-check-double primary"></i>
-              {{$about->kelebihan_4}}
-            </li>
+            </li> 
           </ul>
           <p class="mt-2">
             {{$about->deskripsi_2}}
@@ -146,8 +143,8 @@
         <h2 class="fw-bold">SERVICES</h2>
       </div>
       <p class="text-center mt-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
-        aliquam.
+      We provide several services for you
+      <br><span class="fw-bold primary mt-6 text-lg">our service:</span>
       </p>
       <div class="row mt-5">
         @foreach($services as $service)
@@ -174,15 +171,13 @@
   <div class="portfolio-us mt-5">
     <div class="container">
       <div class="title-container">
-        <h2 class="text-center fw-bold">PORTFOLIO</h2>
+        <h2 class="text-center fw-bold">PRODUCT</h2>
       </div>
       <div class="row mt-4">
         <div class="col-md-12 d-flex justify-content-center">
           <ul class="list-unstyled d-flex portfolio-filters">
             <li data-filter="*" class="py-2 px-4 filter-active text-white">ALL</li>
-            <li data-filter=".filter-web" class="py-2 px-4">Web</li>
-            <li data-filter=".filter-design" class="py-2 px-4">Design</li>
-            <li data-filter=".filter-photo" class="py-2 px-4">Photography</li>
+            <li data-filter=".filter-web" class="py-2 px-4">Food & Drink</li>
           </ul>
         </div>
       </div>
@@ -208,10 +203,10 @@
       <div class="title-container">
         <h2 class="text-center fw-bold">CLIENTS</h2>
       </div>
-      <div class="row mt-5">
+      <div class="row mt-5 d-flex justify-content-center flex-wrap">
         @foreach($clients as $client)
-        <div class="col-md-3 pt-5 text-center" data-aos="zoom-in">
-          <img src="image/{{$client->image}}" class="img-fluid brand-image" alt="" />
+        <div class="col-md-5 pt-5 text-center" data-aos="zoom-in">
+            <img src="image/{{$client->image}}" class="img-fluid brand-image" alt="" />
         </div>
         @endforeach
       </div>
@@ -271,7 +266,7 @@
                 <li class="list-item">
                   <a href="" class="text-decoration-none text-white">
                     <i class="fa fa-chevron-right primary"></i>
-                    Portfolio
+                    Product 
                   </a>
                 </li>
                 <li class="list-item">
@@ -285,7 +280,7 @@
           <div class="col-md-3">
             <h4 class="fw-bold">Join Our Newsletter</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Silahkan Masukan Email Anda.
               </p>
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="yourmail@example.com" />
@@ -303,27 +298,18 @@
           <div class="col-md-1"></div>
           <div class="col-md-5">
             <div class="copyright">
-              &copy; Copyright <strong>Company</strong>. All Right Reserved
+              &copy; Copyright <strong>Mieyuue</strong>. All Right Reserved
             </div>
             <div class="credits">
-              Design by me
+              Design by @Mieyuue
             </div>
           </div>
           <div class="col-md-5">
             <div class="social-links float-end">
-              <a href="" class="mx-2">
-                <i class="fab fa-facebook fa-2x"></i>
-              </a>
-              <a href="" class="mx-2">
-                <i class="fab fa-twitter fa-2x"></i>
-              </a>
-              <a href="" class="mx-2">
+              <a href="https://www.instagram.com/mieyuue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="mx-2">
                 <i class="fab fa-instagram fa-2x"></i>
               </a>
-              <a href="" class="mx-2">
-                <i class="fab fa-youtube fa-2x"></i>
-              </a>
-              <a href="" class="mx-2">
+              <a href="https://www.linkedin.com/company/mieyuu/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BIef5%2BmFMRQuAVCRCQYsTAw%3D%3D" class="mx-2">
                 <i class="fab fa-linkedin fa-2x"></i>
               </a>
             </div>

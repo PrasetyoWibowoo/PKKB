@@ -22,7 +22,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow shadow-sm fixed-top fy-3">
         <div class="container">
-        <a class="navbar-brand fw-bold" href="#"><span class="primary">COM</span>PANY</a>
+        <a class="navbar-brand fw-bold" href="#"><span class="primary">MIE</span>YUUE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -84,14 +84,11 @@
                 <div class="col-md-12 d-flex justify-content-center">
                     <ul class="list-unstyled d-flex portfolio-filters">
                         <li data-filter="*" class="py-2 px-4 filter-active text-white">ALL</li>
-                        <li data-filter=".filter-web" class="py-2 px-4">Food</li>
-                        <li data-filter=".filter-design" class="py-2 px-4">Drink</li>
+                        <li data-filter=".filter-web" class="py-2 px-4">Food & Drink</li>
                     </ul>
                 </div>
             </div>
-            <p class="text-center mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem modi vero
-                voluptas ea molestias eum illo, ducimus eius quisquam repellendus accusamus rerum! Repeliendus enim
-                incidunt assumenda pariatur, quisquam evaniet numquam.</p>
+            <p class="text-center mt-4">"Selamat datang di halaman produk makanan kami! Kami bangga menawarkan berbagai pilihan makanan berkualitas tinggi yang dirancang untuk memuaskan selera Anda. Setiap produk kami dibuat dengan bahan-bahan terbaik dan resep yang telah teruji, sehingga Anda dapat menikmati cita rasa yang autentik dan lezat."</p>
             <div class="row mt-5">
                 <div class="col-md-12">
                     <div class="mansory portfolio-container">
@@ -174,8 +171,7 @@
             <div class="col-md-3">
                 <h4 class="fw-bold">Join Our Newsletter</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+                Silahkan Masukan Email Anda.                </p>
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="yourmail@example.com" />
                     <button class="btn btn-subscribe" type="button" id="inputGroupFileAddon04">
@@ -191,32 +187,23 @@
             <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-5">
-                <div class="copyright">
-                &copy; Copyright <strong>Company</strong>. All Right Reserved
-                </div>
-                <div class="credits">
-                Design by me
-                </div>
+            <div class="copyright">
+              &copy; Copyright <strong>Mieyuue</strong>. All Right Reserved
             </div>
-            <div class="col-md-5">
-                <div class="social-links float-end">
-                <a href="" class="mx-2">
-                    <i class="fab fa-facebook fa-2x"></i>
-                </a>
-                <a href="" class="mx-2">
-                    <i class="fab fa-twitter fa-2x"></i>
-                </a>
-                <a href="" class="mx-2">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </a>
-                <a href="" class="mx-2">
-                    <i class="fab fa-youtube fa-2x"></i>
-                </a>
-                <a href="" class="mx-2">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                </div>
+            <div class="credits">
+              Design by @Mieyuue
             </div>
+          </div>
+          <div class="col-md-5">
+            <div class="social-links float-end">
+              <a href="https://www.instagram.com/mieyuue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="mx-2">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/mieyuu/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BIef5%2BmFMRQuAVCRCQYsTAw%3D%3D" class="mx-2">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+            </div>
+          </div>
             </div>
         </div>
         </div>

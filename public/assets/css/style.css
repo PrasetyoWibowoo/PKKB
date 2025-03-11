@@ -12,7 +12,7 @@
 }
 
 .primary {
-   color: #07bf07; 
+   color: #bf0707; 
 }
 
 .active {
@@ -59,6 +59,8 @@
 }
 
 .brand-image {
+    height: auto; /* Pertahankan rasio aspek */
+    margin: 10px; /* Tambahkan margin untuk jarak antar gambar */
     width: 50%;
     object-fit: cover;
     filter: grayscale(1);

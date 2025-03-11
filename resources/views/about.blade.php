@@ -66,13 +66,6 @@
                 <small style="color:red">{{$message}}</small>
                 @enderror
                 <div class="form-group">
-                    <label for="">Kelebihan 4</label>
-                    <input type="text" class="form-control" name="kelebihan_4" placeholder="Kelebihan 4" value="{{ $about->kelebihan_1 }}">
-                </div>
-                @error('kelebihan_4')
-                <small style="color:red">{{$message}}</small>
-                @enderror
-                <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">Submit</button>
                 </div>
             </form>

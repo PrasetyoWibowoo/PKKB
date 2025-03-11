@@ -22,7 +22,7 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow shadow-sm fixed-top fy-3">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#"><span class="primary">COM</span>PANY</a>
+      <a class="navbar-brand fw-bold" href="#"><span class="primary">MIE</span>YUUE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -121,9 +121,7 @@
       <div class="title-container ">
         <h2 class="text-center fw-bold ">OUR TEAM</h2>
       </div>
-      <p class="text-center ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem modi vero voluptas ea
-        molestias eum illo, ducimus eius quisquam repellendus accusamus rerum! Repeliendus enim incidunt assumenda
-        pariatur, quisquam evaniet numquam.</p>
+      <p class="text-center ">"Bertemu dengan tim kami! Kami adalah sekelompok individu yang penuh semangat dan energi, siap menghadapi tantangan dan menciptakan solusi inovatif. Setiap anggota tim kami adalah bintang di bidangnya, dan bersama-sama, kami bersinar lebih terang!"</p>
       <div class="row">
         @foreach ($teams as $team)
         <div class="col-md-3" data-aos="fade-up">
@@ -147,9 +145,9 @@
       <div class="title-container">
         <h2 class="text-center fw-bold">CLIENTS</h2>
       </div>
-      <div class="row mt-5">
+      <div class="row mt-5 d-flex justify-content-center flex-wrap">
         @foreach($clients as $client)
-        <div class="col-md-3 pt-5 text-center" data-aos="zoom-in">
+        <div class="col-md-5 pt-5 text-center" data-aos="zoom-in">
           <img src="image/{{$client->image}}" class="img-fluid brand-image" alt="" />
         </div>
         @endforeach
@@ -224,7 +222,7 @@
           <div class="col-md-3">
             <h4 class="fw-bold">Join Our Newsletter</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Silahkan Masukan Email Anda.              
               </p>
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="yourmail@example.com" />
@@ -242,27 +240,18 @@
           <div class="col-md-1"></div>
           <div class="col-md-5">
             <div class="copyright">
-              &copy; Copyright <strong>Company</strong>. All Right Reserved
+              &copy; Copyright <strong>Mieyuue</strong>. All Right Reserved
             </div>
             <div class="credits">
-              Design by me
+              Design by @Mieyuue
             </div>
           </div>
           <div class="col-md-5">
             <div class="social-links float-end">
-              <a href="" class="mx-2">
-                <i class="fab fa-facebook fa-2x"></i>
-              </a>
-              <a href="" class="mx-2">
-                <i class="fab fa-twitter fa-2x"></i>
-              </a>
-              <a href="" class="mx-2">
+              <a href="https://www.instagram.com/mieyuue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="mx-2">
                 <i class="fab fa-instagram fa-2x"></i>
               </a>
-              <a href="" class="mx-2">
-                <i class="fab fa-youtube fa-2x"></i>
-              </a>
-              <a href="" class="mx-2">
+              <a href="https://www.linkedin.com/company/mieyuu/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BIef5%2BmFMRQuAVCRCQYsTAw%3D%3D" class="mx-2">
                 <i class="fab fa-linkedin fa-2x"></i>
               </a>
             </div>
