@@ -1,0 +1,44 @@
+{
+    "version": 2,
+    "functions": {
+        "api/*.php": {
+            "runtime": "vercel-php@0.6.0"
+        }
+    },
+    "routes": [
+        {
+            "src": "/(css|js|img|image|fonts|assets)/(.*)",
+            "dest": "/public/$1/$2"
+        },
+        {
+            "src": "/storage/(.*)",
+            "dest": "/storage/app/public/$1"
+        },
+        {
+            "src": "/test",
+            "dest": "/api/test.php"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "APP_KEY": "base64:SGVhZEdCZy1JREY4c1lzLWRVSkNsUGVkLWNYNnBRbkpFN0pMeDBJZ1VXWT0=",
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_EVENTS_CACHE": "/tmp/events.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php",
+        "APP_SERVICES_CACHE": "/tmp/services.php",
+        "VIEW_COMPILED_PATH": "/tmp",
+        "CACHE_DRIVER": "array",
+        "LOG_CHANNEL": "stderr",
+        "SESSION_DRIVER": "cookie",
+        "DB_CONNECTION": "sqlite",
+        "DB_DATABASE": "/tmp/database.sqlite",
+        "COMPOSER_ALLOW_SUPERUSER": "1",
+        "COMPOSER_NO_INTERACTION": "1"
+    }
+}
