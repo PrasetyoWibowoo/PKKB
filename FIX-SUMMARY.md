@@ -11,12 +11,16 @@
 ```json
 "builds": [
     {
-        "src": "api/index.php",
-        "use": "@vercel/php@0.6.0"  // ✅ Official Vercel PHP runtime
+        "src": "api/*.php",
+        "use": "vercel-php@0.6.0"  // ✅ Working PHP runtime
+    },
+    {
+        "src": "public/**",
+        "use": "@vercel/static"    // ✅ Static assets
     }
 ]
 ```
-*Fixed: Invalid runtime error dengan menggunakan package name yang benar*
+*Fixed: Package error dengan menggunakan correct runtime packages*
 
 ### 2. **Environment Variables untuk Composer**
 ```json
