@@ -2,15 +2,16 @@
 
 ## 🔧 Perbaikan yang Telah Dilakukan:
 
-### 1. **Optimasi Memory di vercel.json**
+### 1. **Optimasi Memory di vercel.json** ✅
 ```json
-"functions": {
-    "api/index.php": {
-        "memory": 1024,
-        "maxDuration": 30
+"builds": [
+    {
+        "src": "api/index.php",
+        "use": "vercel-php@0.6.0"
     }
-}
+]
 ```
+*Note: Menggunakan `builds` property (bukan `functions`) untuk kompatibilitas Vercel*
 
 ### 2. **Environment Variables untuk Composer**
 ```json
