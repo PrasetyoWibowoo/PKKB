@@ -1,0 +1,7 @@
+{
+    "name": "laravel/serverless",
+    "type": "project",
+    "require": {
+        "php": "^8.0"
+    }
+}

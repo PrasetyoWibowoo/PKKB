@@ -1,10 +1,8 @@
 {
     "version": 2,
     "functions": {
-        "api/laravel.php": {
-            "runtime": "vercel-php@0.7.0",
-            "memory": 1024,
-            "maxDuration": 30
+        "serverless/index.php": {
+            "runtime": "vercel-php@0.7.0"
         }
     },
     "routes": [
@@ -18,7 +16,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "/api/laravel.php"
+            "dest": "/serverless/index.php"
         }
     ],
     "env": {
