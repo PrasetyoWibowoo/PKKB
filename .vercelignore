@@ -17,3 +17,9 @@ yarn-error.log
 /bootstrap/cache/*
 .DS_Store
 Thumbs.db
+/tests
+/database/seeds
+/database/factories
+*.md
+!README.md
+composer.lock

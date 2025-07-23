@@ -9,18 +9,13 @@
 
 ### 1. **PHP Runtime Fix di vercel.json** ✅
 ```json
-"builds": [
-    {
-        "src": "api/*.php",
-        "use": "vercel-php@0.6.0"  // ✅ Working PHP runtime
-    },
-    {
-        "src": "public/**",
-        "use": "@vercel/static"    // ✅ Static assets
+"functions": {
+    "api/index.php": {
+        "runtime": "vercel-php@0.6.0"  // ✅ Single PHP entry point
     }
-]
+}
 ```
-*Fixed: Package error dengan menggunakan correct runtime packages*
+*Fixed: Runtime detection dengan single entry point dan explicit runtime*
 
 ### 2. **Environment Variables untuk Composer**
 ```json
