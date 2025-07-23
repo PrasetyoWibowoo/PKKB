@@ -44,6 +44,11 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "vercel-build": [
+            "@php artisan config:cache",
+            "@php artisan route:cache",
+            "@php artisan view:cache"
         ]
     },
     "extra": {
@@ -54,7 +59,12 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "*": true
+        },
+        "process-timeout": 300,
+        "cache-files-ttl": 0
     },
     "minimum-stability": "dev",
     "prefer-stable": true

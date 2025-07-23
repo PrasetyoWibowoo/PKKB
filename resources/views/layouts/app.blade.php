@@ -46,7 +46,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <img src="/lte/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="/admin/dashboard" class="d-block">{{ Auth::user()->email; }}</a>
+          <a href="/admin/dashboard" class="d-block">{{ Auth::user()->email }}</a>
         </div>
       </div>
 
