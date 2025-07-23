@@ -15,7 +15,7 @@
     "builds": [
         {
             "src": "api/index.php",
-            "use": "vercel-php@0.6.0"
+            "use": "@vercel/php@0.6.0"
         }
     ],
     "routes": [
