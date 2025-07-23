@@ -7,15 +7,22 @@
 
 ## �🔧 Perbaikan yang Telah Dilakukan:
 
-### 1. **PHP Runtime Fix di vercel.json** ✅
+### 1. **PHP Runtime Detection Fix** ✅
 ```json
-"functions": {
-    "api/index.php": {
-        "runtime": "vercel-php@0.6.0"  // ✅ Single PHP entry point
+// vercel.json
+"builds": [
+    {
+        "src": "api/index.php",
+        "use": "vercel-php@0.6.0"
     }
+]
+
+// api/.vc-config.json  
+{
+    "runtime": "vercel-php@0.6.0"
 }
 ```
-*Fixed: Runtime detection dengan single entry point dan explicit runtime*
+*Fixed: Runtime detection dengan explicit configuration dan .vc-config.json*
 
 ### 2. **Environment Variables untuk Composer**
 ```json
